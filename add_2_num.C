@@ -1,13 +1,12 @@
 #include<stdio.h>
 
-void input()
+void input(int *a,int *b)
 {
-    int a,b;
     printf("enter two numbers\n");
-    scanf("%d%d",&a,&b);
+    scanf("%d%d",a,b);
 }
 
-int add(a,b)
+int add(int a,int b)
 {
    int c;
    c=a+b;
@@ -15,18 +14,16 @@ int add(a,b)
    
 }
 
-void output()
+void output(int a,int b)
 {
   int c;
-  printf("sum of two numbers is=%d",c);
-    
+  printf("sum of %d and %d is=%d",a,b,c);
 }
 
 void main()
 { 
     int a,b,c;
-    input();
+    input(&a,&b);
     add(a,b);
-    output(c);
-    
+    output(a,b);
 }
