@@ -28,7 +28,7 @@ void output(int n)
 
 void main()
 { 
-    int n,sum;
+    int n;
     input(&n);
     add(n);
     output(n);
